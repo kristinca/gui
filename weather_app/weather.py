@@ -18,10 +18,7 @@ def zipLookUp():
     # zipLabel.grid(row=1, column=0, columnspan=2)
     try:
         # api_requests = requests.get()
-        api_requests = requests.get(
-        "https://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&"
-        "zipCode="+ zip.get()+"&distance=5"
-        "&API_KEY=9D1B863E-65DB-4882-9E62-6D2894FC1879")
+        api_requests = requests.get()
         api = json.loads(api_requests.content)
         city = api[0]['ReportingArea']
         quality = api[0]['AQI']
@@ -47,9 +44,6 @@ def zipLookUp():
         myLabel.grid(row=1, column=0, columnspan=2)
     except Exception as e:
             api = "Error..."
-
-
-# https://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=19099&distance=5&API_KEY=9D1B863E-65DB-4882-9E62-6D2894FC1879
 
 
 

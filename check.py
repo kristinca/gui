@@ -5,9 +5,9 @@ root = Tk()
 root.title("a title")
 root.iconbitmap("photos/python_logo.ico")
 
+
 def show():
     myLabel = Label(root, text=var.get()).pack()
-
 
 
 # var = IntVar()
