@@ -159,7 +159,7 @@ class FrameThree(tk.Frame):
 
         self.button1 = ttk.Button(self, text='<<', command=lambda: controller.show_frame('FrameTwo'))
         self.button1.pack(side='left')
-        button2 = ttk.Button(self, text='>>', command=lambda: controller.show_frame('FrameFive'))
+        button2 = ttk.Button(self, text='>>', command=lambda: controller.show_frame('FrameFour'))
         button2.pack(side='right')
 
 
